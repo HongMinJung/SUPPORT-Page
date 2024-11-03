@@ -1,0 +1,778 @@
+@charset "utf-8";
+
+/* 기본 CSS */
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 지정넘비 적용시키는 클래스 */
+.container {
+    width: 90%;
+    max-width: 1132px;
+    margin: 0 auto;
+}
+/* 각 박스 타이틀 스타일 */
+.sec_title {
+    font-size: 28px;
+    font-size: 2.8rem;
+    color: #f9a141;
+    letter-spacing: -1px;
+}
+/* 구분선 */
+.divider {
+    width: 90%;
+    max-width: 1132px;
+    margin: 0 auto;
+    height: 2px;
+    background: #f9a141;
+    margin-top: 80px;
+}
+/* 미니구분선 */
+.m_divider {
+    width: 20px;
+    margin: 0 auto;
+    height: 2px;
+    background: #f9a141;
+    margin-top: 80px;
+}
+
+/* 모바일 퍼스트 = 모바일용 공통 스타일 */
+/* 1. Header CSS*/
+.header {
+    padding: 18px 5%;
+    /* 위치기준값 */
+    position: relative;
+}
+.header .logo {
+    /* 플롯 */
+    float: left;
+}
+
+/* GNB */
+.header .gnb {
+    width: 100%;
+    background: #fff;
+    opacity: 0.8;
+    /* 포지션 */
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 99999;
+    /* 로딩시 GNB hide */
+    display: none;
+}
+.header .gnb li {
+    margin-top: 5px;
+    color: #333;
+    border-bottom: 1px solid #141c30;
+}
+.header .gnb li:hover {
+    color: #f9a141;
+    font-weight: 500;
+}
+.header .gnb li a {
+    display: block;
+    font-size: 14px;
+    font-size: 1.4rem;
+    padding: 14px 0 14px 5%;
+}
+
+
+/* 2. Slider*/
+.slider .slider_img {
+    max-width: 100%;
+    width: 100%;
+}
+.slider .slider_img img {
+    max-width: 100%;
+    width: 100%;
+}
+article {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+#gallery_wrap img {
+    width: 100%;
+    transition: all 0.2s;
+}
+
+/* 3. Contents */
+/* 3-1. Display */
+.display_section {
+    margin-top: 60px;
+    text-align: center;
+}
+.display_section .sec_title {
+    margin-bottom: 32px;
+}
+.display_section .desc {
+    color: #333;
+    line-height: 2;
+    font-size: 1.6rem;
+}
+/* 3-2. support */
+.support_section {
+    margin-top: 68px;
+}
+.support_section .support_list li {
+    margin-top: 48px;
+    text-align: center;
+}
+.support_section .support_list li:nth-child(1) {
+    margin-top: 0;
+}
+.support_section .support_list li img {
+    height: 52px;
+}
+.support_section .support_list li h3 {
+    margin: 30px 0 20px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #f9a141;
+}
+.support_section .support_list li p {
+    font-size: 14px;
+    font-size: 1.4rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* 3-3. escueracter */
+.escue_section {
+    margin-top: 74px;
+}
+.escue_section .sec_title {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 48px; 
+}
+.escue_section .escue_list li {
+    width: 100%;
+}
+.escue_section .escue_list li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.escue_section .escue_list li img {
+    max-width: 100%;
+    width: 100%;
+}
+/* 이미지 정보 효과 */
+.escue_section .escue_list li a {
+    /* 위치기준값 */
+    position: relative;
+}
+/* a. 셀로판지 효과 */
+.escue_section .escue_list li a:before {
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* 포지션 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background: #ffffff;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+/* a-1. 호버시 셀로판지효과 보이게 */
+.escue_section .escue_list li a:hover:before {
+    opacity: 0.7;
+}
+/* 텍스트 CSS */
+.escue_section .escue_list li div h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+.escue_section .escue_list li div span {
+    font-size: 2rem;
+    line-height: 2;
+    font-weight: 500;
+    color: #333;
+}
+/* b.텍스트 이동 효과 */
+.escue_section .escue_list li div {
+    position: absolute;
+    left: 80px;
+    top: 20px;
+    z-index: 200;
+    opacity: 0;
+    transition: all 0.3s;
+}
+/* b-1.호버시 텍스트 이동 */
+.escue_section .escue_list li a:hover div {
+    opacity: 1;
+    transform: translateY(30px);
+}
+
+/* 3-4. campaign */
+.campaign_section {
+    margin-top: 80px;
+}
+.campaign_section .sec_title {
+    margin-bottom: 48px;
+    text-align: center;
+}
+.campaign_section .campaign_list li {
+    width: 100%;
+    margin-top: 48px;
+}
+.campaign_section .campaign_list li:nth-child(1) {
+    margin-top: 0;
+}
+.campaign_section .campaign_list li img {
+    max-width: 100%;
+    width: 100%;
+}
+.campaign_section .campaign_list li p {
+    display: block;
+    font-size: 12px;
+    font-size: 1.2rem;
+    color: #f9a141;
+    margin: 10px 0;
+}
+.campaign_section .campaign_list li h3 {
+    color: #333;
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+/* 3-5. contact */
+.contact_section {
+    margin-top: 100px;
+}
+.contact_section .sec_title {
+    margin-bottom: 48px;
+    text-align: center;
+}
+/* input/textarea CSS */
+input, textarea {
+    border-bottom: 1px solid #757575;
+    font-size: 12px;
+    color: #374772;
+    border-radius: 0;
+}
+.contact_section .form_box .form input {
+    padding-bottom: 14px;
+    margin-bottom: 40px;
+}
+.contact_section .form_box .txta textarea {
+    height: 170px;
+}
+.contact_section .form_box .send_btn {
+    margin-top: 36px;
+    text-align: right;
+}
+.contact_section .form_box .send_btn button {
+    font-size: 12px;
+    color: #fff;
+    background: #f9a141;
+    padding: 15px;
+    cursor: pointer;
+}
+legend {
+    display: none;
+}
+label {
+    display: none;
+}
+input:focus {
+    outline: none;
+}
+/*  4. Footer */
+.footer {
+    margin-top: 100px;
+}
+.footer iframe {
+    width: 100%;
+    height: 320px;
+}
+.footer p {
+    margin: 20px 0;
+    color: #ccc;
+    font-size: 14px;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 1.5;
+}
+/*  top btn */
+#top .top {
+    padding: 14px;
+    background: #f9a141;
+    border-radius: 10px;
+    color: #fff;
+    position: fixed;
+    right: 0;
+    bottom: 10px;
+    z-index: 100000;
+    transform: translateY(-50%);
+}
+/* 태블릿 미디어 쿼리 768px 이상 */
+@media screen and (min-width:768px){
+    .sec_title {
+        font-size: 42px;
+        font-size: 4.2rem;
+        color: #f9a141;
+    }
+    /* 1. 태블릿 Header CSS*/
+    .header {
+        padding: 18px 0;
+        /* 위치기준값 */
+        position: relative;
+    }
+    .header .logo {
+        /* 플롯 */
+        float: left;
+    }
+
+    /* 태블릿 GNB */
+    .header .gnb li {
+        border-bottom: 0;
+        /* 플롯 */
+        float: left;
+        margin-left: 20px;
+    }
+    .header .gnb li a {
+        display: block;
+        font-size: 16px;
+        font-size: 1.6rem;
+        padding-top: 17px;
+    }
+
+    /* 2. 태블릿 Slider*/
+    .slider .slider_img {
+        max-width: 100%;
+        width: 100%;
+    }
+    .slider .slider_img img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* 3. 태블릿 Contents */
+    /* 3-1. 태블릿 Display */
+    .display_section {
+        margin-top: 100px;
+        text-align: center;
+    }
+    .display_section .sec_title {
+        margin-bottom: 32px;
+    }
+    .display_section .desc {
+        color: #333;
+        line-height: 2;
+    }
+
+    /* 3-2. 태블릿 support */
+    .support_section {
+        margin-top: 110px;
+    }
+    .support_section .support_list li {
+        /* (768px) */
+        width: 177px;
+        /* (177/768)*100=23.046875%*/
+        width: 23.046875%;
+        margin-left: 20px;
+        /* (20/768)*100=2.604166666666667% */
+        margin-left: 2.604166666666667%;
+        margin-top: 0;
+        text-align: center;
+        /* 플롯 */
+        float: left;
+    }
+    .support_section .support_list li:nth-child(1) {
+        margin-left: 0;
+    }
+    .support_section .support_list li img {
+        height: 52px;
+    }
+    .support_section .support_list li h3 {
+        margin: 30px 0 20px;
+        color: #f9a141;
+    }
+    .support_section .support_list li p {
+        font-size: 14px;
+        font-size: 1.4rem;
+        color: #333;
+        line-height: 1.5;
+    }
+
+
+    /* 3-3. 태블릿 escueracter */
+    .escue_section {
+        margin-top: 100px;
+    }
+    .escue_section .sec_title {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 80px; 
+    }
+    .escue_section .escue_list li {
+        width: 50%;
+        /* 플롯 */
+        float: left;
+    }
+    .escue_section .escue_list li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .escue_section .escue_list li img {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    /* 3-4. 태블릿 campaign */
+    .campaign_section {
+        margin-top: 124px;
+    }
+    .campaign_section .sec_title {
+        margin-bottom: 48px;
+        text-align: center;
+    }
+    .campaign_section .campaign_list li {
+        margin-top: 0;
+        width: 242.6666666666667px;
+        /* (242.6666666666667/768)*100 = 31.597222222222225 */
+        width: 31.597222222222225%;
+        margin-left: 20px;
+        /* (20/768)*100 = 2.604166666666667 */
+        margin-left: 2.604166666666667%;
+        /* 플롯 */
+        float: left;
+    }
+    .campaign_section .campaign_list li:nth-child(1) {
+        margin-left: 0;
+    }
+    .campaign_section .campaign_list li img {
+        max-width: 100%;
+        width: 100%;
+    }
+    .campaign_section .campaign_list li p {
+        display: block;
+        font-size: 12px;
+        font-size: 1.2rem;
+        color: #f9a141;
+        margin: 10px 0;
+    }
+    .campaign_section .campaign_list li h3 {
+        color: #333;
+        line-height: 1.6;
+    }
+
+    /* 3-5. 태블릿 contact */
+    .contact_section {
+        margin-top: 180px;
+    }
+    .contact_section .sec_title {
+        margin-bottom: 80px;
+        text-align: center;
+    }
+    /* input/textarea CSS */
+    input, textarea {
+        border-bottom: 1px solid #757575;
+        font-size: 12px;
+        color: #374772;
+        border-radius: 0;
+    }
+    .contact_section .form_box .form {
+        width: 374px;
+        /* (374/768)*100 = 48.69791666666667 */
+        width: 48.69791666666667%;
+        margin-right: 20px;
+        /* (20/768)*100 = 2.604166666666667 */
+        margin-right: 2.604166666666667%;
+        /* 플롯 */
+        float: left;
+    }
+    .contact_section .form_box .txta {
+        width: 374px;
+        /* (374/768)*100 = 48.69791666666667 */
+        width: 48.69791666666667%;
+        /* 플롯 */
+        float: right;
+    }
+    .contact_section .form_box .form input {
+        padding-bottom: 14px;
+        margin-bottom: 40px;
+    }
+    .contact_section .form_box .txta textarea {
+        height: 170px;
+    }
+    .contact_section .form_box .send_btn {
+        margin-top: 36px;
+        text-align: right;
+    }
+    .contact_section .form_box .send_btn button {
+        font-size: 12px;
+        color: #fff;
+        background: #f9a141;
+        padding: 15px;
+        cursor: pointer;
+    }
+}
+
+/* PC 미디어 쿼리 768px 이상 */
+@media screen and (min-width:1132px){
+    .header .gnb {
+        /* GNB show  */
+        display: block !important;
+        /* 모바일 속성값 초기화 */
+        width: auto;
+        background: none;
+        /* 포지션 */
+        position: static;
+        /* 플롯 */
+        float: right;
+    }
+    /* 2. PC Slider*/
+    .slider .slider_img {
+        max-width: 100%;
+        width: 100%;
+    }
+    .slider .slider_img img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* 3. PC Contents */
+    /* 3-1. PC Display */
+    .display_section {
+        margin-top: 100px;
+        text-align: left;
+    }
+    .display_section .sec_title {
+        margin-bottom: 0;
+        /* 플롯 */
+        float: left;
+    }
+    .display_section .desc {
+        color: #333;
+        line-height: 2;
+        text-align: left;
+        /* 플롯 */
+        float: right;
+        /* 위치기준값 */
+        position: relative;
+        padding-left: 20px;
+    }
+    /* PC 데코레이션 세로 막대 */
+    .display_section .desc::before {
+        content: "";
+        display: block;
+        width: 2px;
+        height: 44px;
+        background: #f9a141;
+        /* 포지션 */
+        position: absolute;
+        left: 0;
+        top: 10px;
+        z-index: 1;
+    }
+
+    /* 3-1. 태블릿 Display */
+    .display_section {
+        margin-top: 100px;
+        text-align: center;
+    }
+    .display_section .sec_title {
+        margin-bottom: 32px;
+    }
+    .display_section .desc {
+        color: #333;
+        line-height: 2;
+    }
+
+    /* 3-2. PC support */
+    .support_section {
+        margin-top: 110px;
+    }
+    .support_section .support_list li {
+       /* (1132px) */
+        width: 268px;
+        /* (268/1132)*100 = 23.674911660777383 */
+        width: 23.674911660777383%;
+        margin-left: 20px;
+        /* (20/1132)*100 = 1.76678445229682 */
+        margin-left: 1.76678445229682%;
+        margin-top: 0;
+        text-align: center;
+        /* 플롯 */
+        float: left;
+    }
+    .support_section .support_list li:nth-child(1) {
+        margin-left: 0;
+    }
+    .support_section .support_list li img {
+        height: 52px;
+    }
+    .support_section .support_list li h3 {
+        margin: 30px 0 20px;
+        color: #f9a141;
+    }
+    .support_section .support_list li p {
+        font-size: 14px;
+        font-size: 1.4rem;
+        color: #333;
+        line-height: 1.5;
+    }
+
+
+    /* 3-3. PC escueracter */
+    .escue_section {
+        margin-top: 100px;
+    }
+    .escue_section .sec_title {
+        margin: 0 auto;
+        text-align: left;
+        margin-bottom: 80px; 
+    }
+    .escue_section .escue_list li {
+        width: 25%;
+        /* 플롯 */
+        float: left;
+    }
+    .escue_section .escue_list li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .escue_section .escue_list li img {
+        max-width: 100%;
+        width: 100%;
+    }
+    .escue_section .escue_list li div h3 {
+        font-size: 2.5rem;
+    }
+    .escue_section .escue_list li div span {
+        font-size: 1.6rem;
+        line-height: 1.6;
+    }
+
+    .escue_section .escue_list li div {
+        position: absolute;
+        left: 40px;
+        top: 10px;
+        z-index: 200;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    
+    /* 3-4. PC campaign */
+    .campaign_section {
+        margin-top: 124px;
+    }
+    .campaign_section .sec_title {
+        margin-bottom: 0;
+        text-align: center;
+        /* width: 288px; */
+        /* 플롯 */
+        float: left;
+    }
+    .campaign_section .campaign_list {
+        width: 844px;
+        /* (844/1132)*100 = 74.55830388692578 */
+        width: 74.55830388692578%;
+        /* 플롯 */
+        float: right;
+    }
+    .campaign_section .campaign_list li {
+        margin-top: 0;
+        width: 268px;
+        /* (268/844)*100 = 31.753554502369667 */
+        width: 31.753554502369667%;
+        margin-left: 20px;
+        /* (20/844)*100 = 2.3696682464454977 */
+        margin-left: 2.3696682464454977%;
+        /* 플롯 */
+        float: left;
+    }
+    .campaign_section .campaign_list li:nth-child(1) {
+        margin-left: 0;
+    }
+    .campaign_section .campaign_list li img {
+        max-width: 100%;
+        width: 100%;
+    }
+    .campaign_section .campaign_list li p {
+        display: block;
+        font-size: 12px;
+        font-size: 1.2rem;
+        color: #f9a141;
+        margin: 10px 0;
+    }
+    .campaign_section .campaign_list li h3 {
+        color: #333;
+        line-height: 1.6;
+    }
+
+    /* 3-5. pc contact */
+    .contact_section {
+        margin-top: 180px;
+    }
+    .contact_section .sec_title {
+        margin-bottom: 0;
+        /* text-align: center;
+        width: 288px; */
+        /* 플롯 */
+        float: left;
+    }
+    /* input/textarea CSS */
+    input, textarea {
+        border-bottom: 1px solid #757575;
+        font-size: 12px;
+        color: #374772;
+        border-radius: 0;
+    }
+    .contact_section .form_box {
+        width: 844px;
+        /* (844/1132)*100 = 74.55830388692578 */
+        width: 74.55830388692578%;
+        /* 플롯 */
+        float: right;
+    }
+    .contact_section .form_box .form {
+        width: 412px;
+        /* (412/844)*100 = 48.81516587677725 */
+        width: 48.81516587677725%;
+        margin-right: 20px;
+        /* (20/844)*100 = 2.3696682464454977 */
+        margin-right: 2.3696682464454977%;
+        /* 플롯 */
+        float: left;
+    }
+    .contact_section .form_box .txta {
+        width: 412px;
+        /* (412/844)*100 = 48.81516587677725 */
+        width: 48.81516587677725%;
+        /* 플롯 */
+        float: right;
+    }
+    .contact_section .form_box .form input {
+        padding-bottom: 14px;
+        margin-bottom: 40px;
+    }
+    .contact_section .form_box .txta textarea {
+        height: 170px;
+    }
+    .contact_section .form_box .send_btn {
+        margin-top: 36px;
+        text-align: right;
+    }
+    .contact_section .form_box .send_btn button {
+        font-size: 12px;
+        color: #fff;
+        background: #f9a141;
+        padding: 15px;
+        cursor: pointer;
+    }
+}

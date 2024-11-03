@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<!-- [if (gt IE 9)|!(IE)]><!-->
+<html lang="ko">
+<!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="hongminjung">
+    <meta name="description" content="반응형 홍보 템플릿 구현, 포트폴리오">
+    <title>지켜줄개</title>
+    <meta property="og:image" content="./images/fvicon180.png">
+    <meta property="og:title" content="지켜줄개">
+    <meta property="og:description" content="지켜줄개 | 유기견 보호소 홍보 페이지 입니다.">
+    <meta property="og:ul" content="https://support.netlify.app/">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:site_name" content="지켜줄개 | 따스한 삶을 찾을때 까지">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" href="./images/fvicon32.png">
+    <link rel="apple-touch-icon=precomposed" href="./images/fvicon32.png">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    
+    <!-- 기본코딩파일 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
+    <link rel="stylesheet" href="./css/font.css">
+
+    <!-- 프로젝트CSS -->
+    <link rel="stylesheet" href="./css/template.css">
+    <!-- 프로젝트JS -->
+    <script src="./js/template.js"></script>
+    
+    <!-- Slide영역 박스슬라이드 적용 -->
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <script src="./js/jquery.bxslider.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 1. Header -->
+        <header class="header container cf" id="tag">
+            <!-- Logo -->
+            <h1 class="logo">
+                <a href="#tag"><img src="./images/logo.png" alt="로고"></a>
+            </h1>
+            <!-- /Logo -->
+            <!-- Gnb -->
+            <nav>
+                <ul class="gnb">
+                    <li><a href="#tag0">SUPPORT</a></li>
+                    <li><a href="#tag1">RESCUE</a></li>
+                    <li><a href="#tag2">CAMPAIGN</a></li>
+                    <li><a href="#tag3">CONTACT</a></li>
+                </ul>
+            </nav>
+            <!-- /Gnb -->
+        </header>
+        <!-- /Header -->
+
+        <!-- 2. Slider-->
+        <!-- 2. Slider 박스 슬라이더 적용-->
+        <article class="slider">
+            <h2 id="gallery_wrap">
+                <ul class="slide_gallery">
+                    <li><img src="./images/banner01.jpg" alt="슬라이드이미지1"></li>
+                    <li><img src="./images/banner02.jpg" alt="슬라이드이미지2"></li>
+                    <li><img src="./images/banner03.jpg" alt="슬라이드이미지3"></li>
+                </ul>
+            </h2>
+        </article>
+        <!-- /2. Slider -->
+
+        <!-- 3. Contents -->
+        <section class="content" id="tag0">
+            <!-- 3-1. Display -->
+            <section class="display_section container">
+                <div class="cf">
+                    <h2 class="sec_title">SUPPORT</h2>
+                    <p class="desc">
+                        여러분의 따뜻한 후원을 기다립니다.<br>
+                        최고의 반려동물 복지시설 운영하고 구조 동물의 새로운 삶을 선물합니다.<br>
+                    </p>
+                </div>
+            </section>
+            <!-- /3-1. Display -->
+            <!-- 3-2. support -->
+            <section class="support_section container">
+                <h2>
+                    <ul class="support_list cf">
+                        <li>
+                            <a href="#/">
+                                <img src="./images/icon01.png" alt="후원아이콘">
+                                <h3>정기&nbsp;후원</h3>
+                                <p>
+                                    납부 일정을 지정하여<br>
+                                    매달 후원금을 납부합니다.
+                                </p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="./images/icon01.png" alt="후원아이콘">
+                                <h3>일시&nbsp;후원</h3>
+                                <p>
+                                    결재 방법을 통해 후원금을<br>
+                                    1회 납부 가능합니다.
+                                </p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="./images/icon01.png" alt="후원아이콘">
+                                <h3>결연&nbsp;후원</h3>
+                                <p>
+                                    구조 동물이 보호소에서 생활하고<br>
+                                    치료받을 수 있도록 지원합니다.
+                                </p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="./images/icon02.png" alt="증액아이콘">
+                                <h3>후원&nbsp;증액</h3>
+                                <p>
+                                    여유가 되신다면, 고통받는 동물들을 위해<br>
+                                    회원님의 후원금을 증액해주세요.
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </h2>
+            </section>
+            <!-- /3-2. support -->
+
+            <hr class="divider">
+
+            <!-- 3-3. escue -->
+            <section class="escue_section" id="tag1" onclick="return false";>
+                <div>
+                    <h2 class="sec_title container">RESCUE</h2>
+                    <ul class="escue_list cf">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <h3>보리 | 닥스훈트</h3>
+                                    <span>
+                                        성별 | 수컷<br>
+                                        출생 | 5살 추정<br>
+                                        무게 | 6kg<br>
+                                        *중성화 완료*<br>
+                                        - 활동하는 것을 종아해요.<br>
+                                        - 애교가 많아요.<br>
+                                        - 헛짖음이 있어요.
+                                    </span>
+                                </div>
+                                <img src="./images/dog01.jpg" alt="닥스훈트">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <h3>까미 | 보더콜리</h3>
+                                    <span>
+                                        성별 | 암컷<br>
+                                        출생 | 1살 추정<br>
+                                        무게 | 8kg<br>
+                                        *중성화 완료*<br>
+                                        - 민첨해요.<br>
+                                        - 똑똑해요.<br>
+                                        - 사회성이 좋아요.
+                                    </span>
+                                </div>
+                                <img src="./images/dog02.jpg" alt="보더콜리">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <h3>사랑이 | 요크셔테리어</h3>
+                                    <span>
+                                        성별 | 암컷<br>
+                                        출생 | 3살 추정<br>
+                                        무게 | 4kg<br>
+                                        *중성화 완료*<br>
+                                        - 소심해요<br>
+                                        - 사람을 좋아해요<br>
+                                        - 엉뚱한 매력이 있어요.
+                                    </span>
+                                </div>
+                                <img src="./images/dog03.JPG" alt="요크셔테리어">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <h3>장군이 | 진도믹스</h3>
+                                    <span>
+                                        성별 | 수컷<br>
+                                        출생 | 5살 추정<br>
+                                        무게 | 18kg<br>
+                                        *중성화 완료*<br>
+                                        - 듬직해요.<br>
+                                        - 충성심이 강해요.<br>
+                                        - 사회성이 좋아요.
+                                    </span>
+                                </div>
+                                <img src="./images/dog04.jpg" alt="진도믹스">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <h3>절미 | 골든리트리버</h3>
+                                    <span>
+                                        성별 | 암컷<br>
+                                        출생 | 1살 추정<br>
+                                        무게 | 5kg<br>
+                                        *중성화 완료*<br>
+                                        - 사람을 좋아해요.<br>
+                                        - 애교가 많아요.<br>
+                                        - 사회성이 좋아요.
+                                    </span>
+                                </div>
+                                <img src="./images/dog05.jpg" alt="골든리트리버">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <h3>해피 | 믹스</h3>
+                                    <span>
+                                        성별 | 수컷<br>
+                                        출생 | 1살 추정<br>
+                                        무게 | 5kg<br>
+                                        *중성화 완료*<br>
+                                        - 사람을 좋아해요.<br>
+                                        - 애교가 많아요.<br>
+                                        - 장난끼가 많아요.
+                                    </span>
+                                </div>
+                                <img src="./images/dog06.jpg" alt="믹스">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <h3>설기 | 비숑</h3>
+                                    <span>
+                                        성별 | 수컷<br>
+                                        출생 | 5살 추정<br>
+                                        무게 | 5kg<br>
+                                        *중성화 완료*<br>
+                                        - 겁이 많아요.<br>
+                                        - 소심해요.<br>
+                                        - 공놀이를 종아해요.<br>
+                                    </span>
+                                </div>
+                                <img src="./images/dog07.jpg" alt="비숑">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <h3>하얀이 | 포메라니안</h3>
+                                    <span>
+                                        성별 | 암컷<br>
+                                        출생 | 4살 추정<br>
+                                        무게 | 3kg<br>
+                                        *중성화 완료*<br>
+                                        - 사람을 좋아해요.<br>
+                                        - 애교가 많아요.<br>
+                                        - 사회성이 좋아요.
+                                    </span>
+                                </div>
+                                <img src="./images/dog08.jpg" alt="골든리트리버">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- /3-3. escue -->
+
+            <hr class="m_divider">
+
+            <!-- 3-4.campaign -->
+            <section class="campaign_section container" id="tag2" onclick="return false";>
+                <div class="cf">
+                    <h2 class="sec_title">CAMPAIGN</h2>
+                    <ul class="campaign_list cf">
+
+                        <li>
+                            <a href="#">
+                                <img src="./images/campaign01.jpg" alt="campaign앨범이미지1">
+                            </a>
+
+                            <p>사지말고 입양하세요.</p>
+                            <a href="#">
+
+                                <h3>
+                                    평생 함께할 반려견을 찾고 있다면, 펫샵이 아닌 보호소는 어떨까요?
+                                </h3>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="./images/campaign02.jpg" alt="campaign앨범이미지2">
+                            </a>
+                            
+                            <p>개 식용을 반대랍니다.</p>
+                            <a href="#">
+                                <h3>
+                                    사랑스러운 반려견을 지키기 위한 캠페인 많은 참여 바랍니다.
+                                </h3>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">
+                                <img src="./images/campaign03.jpg" alt="campaign앨범이미지3">
+                            </a>
+                            
+                            <p>5기 유기견 봉사자 모집</p>
+                            <a href="#">
+                                <h3>
+                                    청소, 산책, 미용 봉사자 모집합니다. 많은 참여 바랍니다.
+                                </h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- /3-4.campaign -->
+
+            <!-- 3-5. Contact -->
+             <!-- 3-5. contact -->
+             <section class="contact_section container" id="tag3" onclick="return false";>
+                <div class="cf">
+                    <h2 class="sec_title">CONTACT</h2>
+                    <form action="#" class="form_box">
+                        <fieldset class="cf">
+                            <legend class="blind">CONTACT&nbsp;US</legend>
+                            <!-- input 폼 -->
+                            <div class="form">
+                                <label for="name"  class="blind">Name</label>
+                                <input type="text" id="name" placeholder="Name" required autocomplete="off">
+                                <label for="phone" class="blind">Phone</label>
+                                <input type="tel" id="phone" placeholder="Phone" required autocomplete="off">
+                                <label for="email" class="blind">E-Mail</label>
+                                <input type="email" id="email" placeholder="Email Address" required autocomplete="off">
+                            </div>
+                            <!-- /input 폼 -->
+                            <!-- textarea 폼 -->
+                            <div class="txta">
+                                <label for="message" class="blind">message</label>
+                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                            </div>
+                            <!-- /textarea 폼 -->
+                        </fieldset>
+                        <div class="send_btn">
+                            <button type="submit">
+                                SEND MESSAGE
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <!-- /3-5. contact -->
+        </section>
+        <!-- /3. Contents -->
+
+        <!-- 4. Footer -->
+        <footer class="footer">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.
+            8296822104926!2d127.03018581119277!3d37.55907632443978!2m3!1f0!2f0!3f0!
+            3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca35c42e6781b%3A0xa3616a4d58203e6!
+            2z64-Z66y87J6Q7Jyg7Jew64yA!5e0!3m2!1sko!2skr!4v1730649683896!5m2!1sko!2skr" allowfullscreen="" loading="lazy"></iframe>
+            <p>
+                Copyright &copy; 지켜줄개 All Rights Reserved.<br>
+                해당 사이트는 개인 포트폴리오 작업물로, 해당 기업과 무관합니다.
+            </p>
+        </footer>
+        <!-- /4. Footer -->
+        <!-- 5. Asider -->
+        <aside>
+            <div id="top">
+                <a href="#" class="top">TOP</a>
+            </div>
+        </aside>
+        <!-- /5. Asider -->
+    </div>
+</body>
+</html>
