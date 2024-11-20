@@ -14,7 +14,8 @@
     slideSelector: '',
     infiniteLoop: true,
     hideControlOnEnd: false,
-    speed: 500,
+    speed: 300,
+    pause: 3000,
     easing: null,
     slideMargin: 0,
     startSlide: 0,
@@ -46,7 +47,7 @@
     keyboardEnabled: false,
 
     // PAGER
-    pager: true,
+    pager: false,
     pagerType: 'full',
     pagerShortSeparator: ' / ',
     pagerSelector: null,
@@ -54,20 +55,19 @@
     pagerCustom: null,
 
     // CONTROLS
-    controls: true,
+    controls: false,
     nextText: 'Next',
     prevText: 'Prev',
     nextSelector: null,
     prevSelector: null,
-    autoControls: false,
+    autoControls: true,
     startText: 'Start',
     stopText: 'Stop',
     autoControlsCombine: false,
     autoControlsSelector: null,
 
     // AUTO
-    auto: false,
-    pause: 4000,
+    auto: true,
     autoStart: true,
     autoDirection: 'next',
     stopAutoOnClick: false,
@@ -78,16 +78,16 @@
     // CAROUSEL
     minSlides: 1,
     maxSlides: 1,
-    moveSlides: 0,
+    moveSlides: 1,
     slideWidth: 0,
     shrinkItems: false,
 
     // CALLBACKS
     onSliderLoad: function() { return true; },
-    onSlideBefore: function() { return true; },
+    onSlideBefore: function($slideElement, oldIndex, newIndex) { return true; },
     onSlideAfter: function() { return true; },
-    onSlideNext: function() { return true; },
-    onSlidePrev: function() { return true; },
+    onSlideNext: function($slideElement, oldIndex, newIndex) { return true; },
+    onSlidePrev: function($slideElement, oldIndex, newIndex) { return true; },
     onSliderResize: function() { return true; }
   };
 

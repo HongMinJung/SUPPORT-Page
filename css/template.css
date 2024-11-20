@@ -82,7 +82,34 @@ body {
 
 
 /* 2. Slider*/
-.slider .slider_img {
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+#gallery_wrap {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.slide_gallery {
+    position: relative;
+    width: 300%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.slide_gallery li {
+    float: left;
+    width: 33.333%;
+}
+.slide_gallery img {
+    width: 100%;
+    display: block;
+    transition: all 0.2s;
+}
+/* .slider .slider_img {
     max-width: 100%;
     width: 100%;
 }
@@ -97,7 +124,7 @@ article {
 #gallery_wrap img {
     width: 100%;
     transition: all 0.2s;
-}
+} */
 
 /* 3. Contents */
 /* 3-1. Display */
