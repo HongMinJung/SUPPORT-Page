@@ -201,7 +201,7 @@ body {
     border-radius: 12px;
     width: 100%;
     max-width: 400px;
-    max-height: 90vh;
+    /* max-height: 90vh; */
     overflow-y: auto;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     animation: slideIn 0.3s ease;
@@ -1176,6 +1176,7 @@ input:focus {
         line-height: 2;
         font-weight: 500;
         color: #333;
+        display: none;
     }
     /* 이미지 정보 효과 */
     .escue_section .escue_list li button {
@@ -1204,7 +1205,7 @@ input:focus {
     /* b.텍스트 이동 효과 */
     .escue_section .escue_list li button div {
         position: absolute;
-        left: 80px;
+        left: 20px;
         top: 20px;
         z-index: 200;
         opacity: 0;
