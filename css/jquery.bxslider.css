@@ -74,8 +74,8 @@ ul.bxslider {
   background: #ffffff;
   text-indent: -9999px;
   display: block;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   margin: 0 5px;
   outline: 0;
   -moz-border-radius: 5px;
@@ -100,20 +100,48 @@ ul.bxslider {
 }
 /* DIRECTION CONTROLS (NEXT / PREV) */
 .bx-wrapper .bx-prev {
-  left: 10px;
-  background: url('images/controls.png') no-repeat 0 -32px;
+  left: 20px;
+  background: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  position: relative;
+}
+.bx-wrapper .bx-prev:before {
+  content: "‹";
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-indent: 0;
 }
 .bx-wrapper .bx-prev:hover,
 .bx-wrapper .bx-prev:focus {
-  background-position: 0 0;
+  background-color: rgba(255, 255, 255, 1);
 }
 .bx-wrapper .bx-next {
-  right: 10px;
-  background: url('images/controls.png') no-repeat -43px -32px;
+  right: 20px;
+  background: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  position: relative;
+}
+.bx-wrapper .bx-next:before {
+  content: "›";
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-indent: 0;
 }
 .bx-wrapper .bx-next:hover,
 .bx-wrapper .bx-next:focus {
-  background-position: -43px 0;
+  background-color: rgba(255, 255, 255, 1);
 }
 .bx-wrapper .bx-controls-direction a {
   position: absolute;
@@ -124,6 +152,9 @@ ul.bxslider {
   height: 32px;
   text-indent: -9999px;
   z-index: 9999;
+  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 .bx-wrapper .bx-controls-direction a.disabled {
   display: none;
@@ -184,4 +215,10 @@ ul.bxslider {
   display: block;
   font-size: .85em;
   padding: 10px;
+}
+/* 모바일에서 화살표 숨기기 */
+@media (max-width: 768px) {
+  .bx-wrapper .bx-controls-direction a {
+    display: none !important;
+  }
 }
